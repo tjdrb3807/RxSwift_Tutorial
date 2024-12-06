@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4502F6B52D02923100BCFD27 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4502F6B42D02923100BCFD27 /* SnapKit */; };
+		4502F6B82D02927600BCFD27 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 4502F6B72D02927600BCFD27 /* RxCocoa */; };
+		4502F6BA2D02927600BCFD27 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 4502F6B92D02927600BCFD27 /* RxRelay */; };
+		4502F6BC2D02927600BCFD27 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4502F6BB2D02927600BCFD27 /* RxSwift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		4502F69B2D02903F00BCFD27 /* RxSwift_Tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwift_Tutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +43,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4502F6BA2D02927600BCFD27 /* RxRelay in Frameworks */,
+				4502F6B82D02927600BCFD27 /* RxCocoa in Frameworks */,
+				4502F6BC2D02927600BCFD27 /* RxSwift in Frameworks */,
+				4502F6B52D02923100BCFD27 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +89,10 @@
 			);
 			name = RxSwift_Tutorial;
 			packageProductDependencies = (
+				4502F6B42D02923100BCFD27 /* SnapKit */,
+				4502F6B72D02927600BCFD27 /* RxCocoa */,
+				4502F6B92D02927600BCFD27 /* RxRelay */,
+				4502F6BB2D02927600BCFD27 /* RxSwift */,
 			);
 			productName = RxSwift_Tutorial;
 			productReference = 4502F69B2D02903F00BCFD27 /* RxSwift_Tutorial.app */;
@@ -107,6 +122,10 @@
 			);
 			mainGroup = 4502F6922D02903F00BCFD27;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				4502F6B32D02923100BCFD27 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				4502F6B62D02927600BCFD27 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 4502F69C2D02903F00BCFD27 /* Products */;
 			projectDirPath = "";
@@ -149,9 +168,9 @@
 				INFOPLIST_FILE = RxSwift_Tutorial/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -159,9 +178,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sg.RxSwift-Tutorial";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -176,9 +199,9 @@
 				INFOPLIST_FILE = RxSwift_Tutorial/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -186,9 +209,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sg.RxSwift-Tutorial";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -333,6 +360,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4502F6B32D02923100BCFD27 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		4502F6B62D02927600BCFD27 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4502F6B42D02923100BCFD27 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4502F6B32D02923100BCFD27 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		4502F6B72D02927600BCFD27 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4502F6B62D02927600BCFD27 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		4502F6B92D02927600BCFD27 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4502F6B62D02927600BCFD27 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		4502F6BB2D02927600BCFD27 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4502F6B62D02927600BCFD27 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4502F6932D02903F00BCFD27 /* Project object */;
 }
